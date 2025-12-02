@@ -1,5 +1,5 @@
 import React, { useState, type ChangeEvent, type FormEvent } from "react";
-import { Upload, FileText, CheckCircle } from "lucide-react";
+import { Upload, CheckCircle } from "lucide-react";
 
 const Career: React.FC = () => {
   const [fileName, setFileName] = useState<string | null>(null);
