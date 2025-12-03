@@ -1,4 +1,3 @@
-
 import Hero from "../../components/Home/Hero";
 import Story from "../../components/Home/Story";
 import Globe from "../../components/Home/Globe";
@@ -25,9 +24,7 @@ const pageTransition = {
   ease: cubicBezier(0.42, 0, 0.58, 1),
 };
 
-
 function Home() {
-
   return (
     <motion.div
       variants={pageVariants}
@@ -36,7 +33,8 @@ function Home() {
       exit="exit"
       transition={pageTransition}
       //   onAnimationComplete={() => setStartAnimation(true)}
-      className="w-full min-h-screen h-fit relative">
+      className="w-full min-h-screen h-fit relative"
+    >
       <Hero />
       <Story />
       <Choose />
@@ -47,10 +45,10 @@ function Home() {
       <Globe />
       <People />
       <Consult />
-      <Conversation />
+      {/* <Conversation /> */}
       <Work />
     </motion.div>
-  )
+  );
 }
 
-export default Home
+export default Home;
