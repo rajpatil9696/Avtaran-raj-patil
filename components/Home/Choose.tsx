@@ -12,7 +12,7 @@ function Choose() {
       <h2 className="text-[24px] leading-[130%] tracking-[-1]  md:text-[36px] lg:text-[40px] font-semibold">
         <SplitText text="Why choose Us" highlight={["choose", "Us"]} />
       </h2>
-      <AnimatePara text='“Where Expertise Meets Excellence, Worldwide”' />
+      <AnimatePara text="“Where Expertise Meets Excellence, Worldwide”" />
       <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:gap-3 px-[4vw] md:px-[8vw] text-start h-fit">
         <div className="flex flex-col items-center justify-center relative w-full md:w-auto h-fit">
           <img
@@ -46,13 +46,13 @@ function Choose() {
                 Global Reach, Local Expertise
               </span>{" "}
               With{" "}
-              <b>
+              <b className="brandColor">
                 20+ strategic locations across India, Europe, North America,
               </b>{" "}
               and the Middle East, we bring you unparalleled market access
               combined with deep local regulatory knowledge. Our presence in{" "}
-              <b>17 prime Indian cities</b> ensures we understand the nuances of
-              doing business across diverse markets.
+              <b className="brandColor">17 prime Indian cities</b> ensures we
+              understand the nuances of doing business across diverse markets.
             </p>
           </div>
           <div className="flex items-start gap-3 md:gap-4 max-w-[650px]">
@@ -67,9 +67,10 @@ function Choose() {
                 Proven Track Record
               </span>
               Trusted by major international corporations from over{" "}
-              <b>15 countries,</b> including leading companies from the{" "}
-              <b>USA and Europe.</b> When global giants choose us to enter the
-              Indian market, you know you're in capable hands.
+              <b className="brandColor">15 countries,</b> including leading
+              companies from the <b className="brandColor">USA and Europe.</b>{" "}
+              When global giants choose us to enter the Indian market, you know
+              you're in capable hands.
             </p>
           </div>
           <div className="flex items-start gap-3 md:gap-4 max-w-[650px]">
@@ -83,10 +84,11 @@ function Choose() {
               <span className="brandColor block text-[18px] md:text-[24px] font-semibold">
                 Cost-Effective Excellence
               </span>{" "}
-              Get <b>enterprise-level</b> services without enterprise-level
-              costs. Our <b>umbrella approach</b> delivers maximum efficiency at
-              optimal investment, giving you more <b>value</b> for every rupee
-              spent.
+              Get <b className="brandColor">enterprise-level</b> services
+              without enterprise-level costs. Our{" "}
+              <b className="brandColor">umbrella approach</b> delivers maximum
+              efficiency at optimal investment, giving you more{" "}
+              <b className="brandColor">value</b> for every rupee spent.
             </p>
           </div>
         </div>

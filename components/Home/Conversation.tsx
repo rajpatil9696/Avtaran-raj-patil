@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 function Conversation() {
   return (
-    <section className="w-full my-[7vh] min-h-[90vh] px-[1vw] h-fit py-[4vh] text-center flex flex-col gap-1.5 relative">
+    <section className="w-full my-[7vh] min-h-[90vh] px-[1vw] h-fit py-[4vh] text-center flex flex-col gap-1.5 relative text-[#0F6089]">
       <img
         src="/grid.png"
         alt="grid"
@@ -34,7 +34,7 @@ function Conversation() {
             />
             <div>
               Avtaran Capital Advisors Private Limited
-              <p className="text-[14px] md:text-[16px] text-[#1a1a1a]">
+              <p className="text-[14px] md:text-[16px] text-[#0F6089]">
                 301, Kamla Hub, N S Road No. 1, JVPD Scheme, Juhu, Near Aromas
                 Café, Vile Parle West, Mumbai 400049, India
               </p>
@@ -113,7 +113,7 @@ function Conversation() {
             className="w-full mb-10 block lg:hidden object-right"
           />
           <h3 className="font-semibold text-xl md:text-2xl">
-            Let&apos;s Get in <span>Touch</span>
+            <span>Let&apos;s Get in Touch</span>
           </h3>
           <p className="text-[14px] md:text-[16px]">
             or just reach out manually to{" "}
@@ -121,7 +121,7 @@ function Conversation() {
               hck@avtaran.com
             </span>{" "}
           </p>
-          <div className="flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-10 w-full font-semibold text-[14px] md:text-[16px] mt-6 md:mt-8">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-10 w-full font-semibold text-[14px] md:text-[16px] mt-6 md:mt-8 text-[#0F6089]">
             <div className="w-full md:w-1/2 flex flex-col gap-1 items-start ">
               <label htmlFor="f_name">
                 <span className="pl-2">First Name</span>

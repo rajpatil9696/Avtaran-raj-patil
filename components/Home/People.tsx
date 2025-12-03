@@ -9,7 +9,10 @@ function People() {
         className="h-[90vh] max-w-full absolute top-[calc(45%+4vh)] left-1/2 -translate-x-1/2 -translate-y-1/2"
       />
       <h2 className="text-[24px] leading-[130%] tracking-[-1]  sm:text-[28px] md:text-[36px] lg:text-[40px] font-semibold text-center">
-      <SplitText text="What People say about US" highlight={["People","US"]} />
+        <SplitText
+          text="What People say about US"
+          highlight={["People", "US"]}
+        />
       </h2>
       <section className="flex flex-col justify-center items-center gap-2 w-full max-w-[1200px] mx-auto">
         <h2 className="text-center w-full font-semibold text-[16px] md:text-[18px] lg:text-[20px]">
@@ -74,13 +77,23 @@ function People() {
         </section>
       </section>
       <div className="transparent flex mx-auto sm:mx-0 items-start gap-2 max-w-[90vw] md:max-w-none">
-        <img src="/people/star.png" alt="Star" className="w-14 h-14 md:w-18 md:h-18 lg:w-20 lg:h-20" />
+        <img
+          src="/people/star.png"
+          alt="Star"
+          className="w-14 h-14 md:w-18 md:h-18 lg:w-20 lg:h-20"
+        />
         <div className="flex flex-col gap-2">
           <h2 className="text-[18px] md:text-[22px] lg:text-[24px] font-semibold flex items-center gap-2">
-            <span className="text-[28px] md:text-[36px] lg:text-[40px] pr-1">4.5 + </span>average ratings
+            <span className="text-[28px] md:text-[36px] lg:text-[40px] pr-1">
+              4.5 + average ratings
+            </span>
           </h2>
           <div className="flex gap-2 items-center text-[10px] md:text-[11px] lg:text-[12px]">
-            <img src="/people/group.png" alt="Group" className="w-10 h-4 md:w-12 md:h-5 lg:w-14 lg:h-6" />
+            <img
+              src="/people/group.png"
+              alt="Group"
+              className="w-10 h-4 md:w-12 md:h-5 lg:w-14 lg:h-6"
+            />
             from around 2000+ customers
           </div>
         </div>

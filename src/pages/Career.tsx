@@ -19,7 +19,7 @@ const Career: React.FC = () => {
   };
 
   return (
-    <section className="w-full my-[7vh] min-h-[90vh] px-[1vw] h-fit py-[4vh] text-center flex flex-col gap-1.5 relative">
+    <section className="w-full my-[7vh] min-h-[90vh] px-[1vw] h-fit py-[4vh] text-center flex flex-col gap-1.5 relative text-[#0F6089]">
       {/* Background Grid */}
       <img
         src="/grid.png"
@@ -28,7 +28,7 @@ const Career: React.FC = () => {
       />
 
       {/* Header */}
-      <h2 className="text-[24px] leading-[130%] tracking-[-1] sm:text-[28px] md:text-[36px] lg:text-[40px] font-semibold px-4 mb-8">
+      <h2 className="text-[24px] leading-[130%] tracking-[-1] sm:text-[28px] md:text-[36px] lg:text-[40px] font-semibold px-4 mb-8 text-[#0F6089]">
         Join Our <span className="text-[#0F6089]">Team</span>
       </h2>
 
