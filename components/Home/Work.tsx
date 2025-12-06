@@ -15,11 +15,11 @@ function Work() {
             <SplitText text="move — together." highlight="Friend's" />
           </h2>
           <AnimatePara
-            text={`Consulting that feels intuitive,`}
+            text={`Step into smarter finance`}
             className=" -mb-1 text-center"
           />
           <AnimatePara
-            text={`not intimidating.`}
+            text={`with Avataran Captials`}
             className="text-center -mb-1 "
           />
         </div>
@@ -35,7 +35,7 @@ function Work() {
             />
           </h2>
           <AnimatePara
-            text={`Consulting that feels intuitive,not intimidating.`}
+            text={`Step into smarter finance with Avataran Captials`}
             className=" -mb-1 text-center"
           />
         </div>
