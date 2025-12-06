@@ -19,7 +19,7 @@ function Work() {
             className=" -mb-1 text-center"
           />
           <AnimatePara
-            text={`with Avataran Captials`}
+            text={`with Avataran Captial`}
             className="text-center -mb-1 "
           />
         </div>
@@ -35,7 +35,7 @@ function Work() {
             />
           </h2>
           <AnimatePara
-            text={`Step into smarter finance with Avataran Captials`}
+            text={`Step into smarter finance with Avataran Captial`}
             className=" -mb-1 text-center"
           />
         </div>
