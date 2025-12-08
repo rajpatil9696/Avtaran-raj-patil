@@ -13,7 +13,30 @@ function Hero() {
       </h2>
       <div className="w-full h-fit flex flex-col-reverse md:flex-row justify-start relative items-center gap-6 md:gap-3 px-[1vw] sm:px-[4vw] md:px-[5vw] text-start mx-auto">
         <div className="flex -mr-20 flex-col gap-[60px] items-start justify-evenly h-full w-full md:w-[58%]">
-          <p className="mr-20">An investment made by a company or entity based in one country, into a company or entity based in another country is called foreign direct investment.</p>
+          <div className="flex flex-col gap-3">
+            <p className="mr-20">
+              Foreign Direct Investment (FDI) refers to an investment made by a
+              company or individual in one country into a business or entity
+              located in another country. These cross-border investments play a
+              crucial role in global trade and economic growth, but they also
+              come with strict regulatory requirements under the Foreign
+              Exchange Management Act (FEMA) and guidelines issued by the
+              Reserve Bank of India (RBI).
+            </p>
+            <p className="mr-20">
+              Our Foreign Exchange & RBI Compliance services help businesses
+              understand, manage, and execute FDI transactions in full
+              compliance with Indian regulations. From structuring investments
+              and preparing documentation to obtaining necessary approvals and
+              ensuring ongoing regulatory adherence, we guide clients through
+              every step of the process.
+            </p>
+            <p className="mr-20">
+              With our expertise in FEMA, RBI reporting norms, and international
+              investment frameworks, we enable organizations to expand globally
+              with confidence, transparency, and regulatory clarity.
+            </p>
+          </div>
           <section className="flex justify-center items-center gap-4 relative z-40">
             <div className="h-fit relative overflow-hidden p-4 heroCard">
               <img src="/star.png" alt="Star" className="w-4 h-4 ml-auto" />
@@ -66,7 +89,11 @@ function Hero() {
           </section>
         </div>
         <div className="flex items-center justify-center relative right-0 w-full md:w-[48%]">
-          <img src="/rbi.png" alt="hand" className="w-full max-w-[520px] md:max-w-[66vw] relative z-20" />
+          <img
+            src="/rbi.png"
+            alt="hand"
+            className="w-full max-w-[520px] md:max-w-[66vw] relative z-20"
+          />
           <div
             style={{
               position: "absolute",
@@ -74,10 +101,10 @@ function Hero() {
               height: "40%",
               left: "30%",
               top: "52%",
-              borderRadius: '999px',
+              borderRadius: "999px",
               background: "#0F608970",
               boxShadow: "0px 4px 142px 42px #0F6089",
-              transform: 'translate(-50%,-50%)'
+              transform: "translate(-50%,-50%)",
             }}
           ></div>
         </div>

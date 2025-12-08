@@ -13,11 +13,26 @@ function Hero() {
       </h2>
       <div className="w-full h-fit flex flex-col-reverse md:flex-row justify-start relative items-center gap-6 md:gap-3 px-[1vw] sm:px-[4vw] md:px-[5vw] text-start mx-auto">
         <div className="flex -mr-20 flex-col gap-[30px] items-start justify-evenly h-full w-full md:w-[58%]">
-          <p className="mr-20">
-            Complexities of tax law are streamlined through expert guidance,
-            helping individuals and businesses stay compliant, optimize their
-            liabilities, and make informed financial decisions.
-          </p>
+          <div className="flex flex-col gap-3">
+            <p className="mr-20">
+              Income Tax is a form of direct taxation in which the government
+              levies tax directly on the income or wealth of individuals and
+              entities such as corporations, partnerships, and trusts. As a
+              progressive taxation system, higher-income earners are required to
+              pay tax at higher rates, ensuring fairness and contributing to
+              national economic development.
+            </p>
+            <p className="mr-20">
+              Managing direct taxes requires a clear understanding of evolving
+              regulations, accurate reporting, and strategic planning to
+              optimize tax outcomes. Our Income Tax Advisory services help
+              clients stay compliant, minimize risks, and make informed
+              financial decisions. From tax computation and filing to audits,
+              assessments, and long-term tax planning, we ensure seamless
+              compliance and efficient tax management for both individuals and
+              businesses.
+            </p>
+          </div>
           <section className="flex justify-center items-center gap-4 relative z-40">
             <div className="h-fit relative overflow-hidden p-4 heroCard">
               <img src="/star.png" alt="Star" className="w-4 h-4 ml-auto" />
