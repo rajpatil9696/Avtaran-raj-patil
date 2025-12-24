@@ -2,7 +2,7 @@ import SplitText from "../ui/SplitText";
 
 function Hero() {
   return (
-    <section className="w-full min-h-[70vh] h-fit py-[4vh] text-center flex flex-col gap-1.5 relative px-4mb-5 ">
+    <section className="w-full min-h-[70vh] h-fit py-[4vh] text-center flex flex-col gap-1.5 relative px-4 mb-5 ">
       <img
         src="/grid.png"
         alt="grid"
@@ -11,10 +11,10 @@ function Hero() {
       <h2 className="text-[24px] leading-[130%] tracking-[-1] mb-[40px] md:-mb-10 md:text-[36px] lg:text-[40px] font-semibold">
         <SplitText text="Foreign Exchange RBI" highlight="RBI" />
       </h2>
-      <div className="w-full h-fit flex flex-col-reverse md:flex-row justify-start relative items-center gap-6 md:gap-3 px-[1vw] sm:px-[4vw] md:px-[5vw] text-start mx-auto">
-        <div className="flex -mr-20 flex-col gap-[60px] items-start justify-evenly h-full w-full md:w-[58%]">
+      <div className="w-full h-fit flex flex-col-reverse md:flex-row justify-start relative items-center gap-6 md:gap-3 px-[1vw] sm:px-[4vw] md:px-[5vw] text-start md:mx-auto">
+        <div className="flex -mr-20 flex-col gap-[60px] items-start  h-full w-full md:w-[58%]">
           <div className="flex flex-col gap-3">
-            <p className="mr-20">
+            <p className="md:mr-20">
               Foreign Direct Investment (FDI) refers to an investment made by a
               company or individual in one country into a business or entity
               located in another country. These cross-border investments play a
@@ -23,7 +23,7 @@ function Hero() {
               Exchange Management Act (FEMA) and guidelines issued by the
               Reserve Bank of India (RBI).
             </p>
-            <p className="mr-20">
+            <p className="md:mr-20">
               Our Foreign Exchange & RBI Compliance services help businesses
               understand, manage, and execute FDI transactions in full
               compliance with Indian regulations. From structuring investments
@@ -31,13 +31,13 @@ function Hero() {
               ensuring ongoing regulatory adherence, we guide clients through
               every step of the process.
             </p>
-            <p className="mr-20">
+            <p className="md:mr-20">
               With our expertise in FEMA, RBI reporting norms, and international
               investment frameworks, we enable organizations to expand globally
               with confidence, transparency, and regulatory clarity.
             </p>
           </div>
-          <section className="flex justify-center items-center gap-4 relative z-40">
+          <section className="flex justify-center md:flex-row flex-col items-center gap-4 relative z-40">
             <div className="h-fit relative overflow-hidden p-4 heroCard">
               <img src="/star.png" alt="Star" className="w-4 h-4 ml-auto" />
               <div className="flex justify-start items-center w-full gap-2">

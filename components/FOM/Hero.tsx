@@ -27,7 +27,7 @@ function Hero() {
             and enterprises make informed decisions, safeguard their wealth, and
             build a future-ready foundation for the next generation.
           </p>
-          <section className="flex justify-center items-center gap-4 relative z-40">
+          <section className="flex md:flex-row flex-col justify-center items-center gap-4 relative z-40">
             <div className="h-fit relative overflow-hidden p-4 heroCard">
               <img src="/star.png" alt="Star" className="w-4 h-4 ml-auto" />
               <div className="flex justify-start items-center w-full gap-2">

@@ -4,7 +4,20 @@ import Hero1 from "./Hero1";
 import Hero2 from "./Hero2";
 import Hero3 from "./Hero3";
 
-const components = [Hero1, Hero2, Hero3];
+const components = [
+  Hero1,
+  Hero2,
+  Hero3,
+  Hero1,
+  Hero2,
+  Hero3,
+  Hero1,
+  Hero2,
+  Hero3,
+  Hero1,
+  Hero2,
+  Hero3,
+];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
@@ -12,7 +25,7 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % components.length);
-    }, 6000);
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
 
@@ -21,33 +34,27 @@ export default function Hero() {
   return (
     <div className="relative w-full overflow-hidden min-h-[60vh]">
       <div className="w-full h-fit opacity-0 z-[-1] relative">
-        <Hero1 />
+        <Hero1 isActive={true} />
       </div>
       <div className="absolute inset-0 w-full h-full">
         {/* Previous slides stay rendered (stacked below) */}
-        {components.map((Comp, i) => (
-          <div
-            key={i}
-            className={`absolute inset-0 w-full h-full transition-opacity duration-700 ${
-              i === index ? "z-20" : "z-10"
-            }`}
-          >
-            {i === index ? (
-              <motion.div
-                initial="hidden"
-                animate={i === index ? "visible" : "hidden"}
-                transition={{ duration: 1.5, ease: "easeOut" }}
-                className="absolute inset-0 w-full h-full"
-              >
-                <Comp />
-              </motion.div>
-            ) : (
-              <div className="absolute inset-0 w-full h-full">
-                <Comp />
-              </div>
-            )}
-          </div>
-        ))}
+        {components.map((Comp, i) => {
+          // This is a simple boolean variable
+          const isActive = i === index;
+
+          return (
+            <motion.div
+              key={i}
+              initial={{ x: "100%" }}
+              animate={{ x: i === index ? 0 : i < index ? 0 : "100%" }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              style={{ zIndex: i === index ? 20 : 10 }}
+              className="absolute inset-0 w-full h-full"
+            >
+              <Comp isActive={isActive} />
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import MenuToClose from "../ui/MenuToClose";
 import SideMenu from "./SIdeMenu";
@@ -42,18 +42,12 @@ const variants = {
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [search, setSearch] = useState(false);
+  // const [search, setSearch] = useState(false);
   const [serviceDrop, setServiceDrop] = useState(false);
   const navigate = useNavigate();
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "none";
-    }
-  }, [isOpen]);
+
   return (
-    <nav className="w-full px-[2vw] pt-[20px]  top-0 z-50 h-[100px] bg-[#f8f8f8]">
+    <nav className="w-full px-[2vw] pt-[20px] fixed top-0 z-50 h-[100px] bg-[#f8f8f8]">
       <div className=" px-[10px]  flex justify-between items-center h-full relative z-50">
         <img
           src="/logo.png"
@@ -61,85 +55,54 @@ function Navbar() {
           className="max-h-[60%] w-auto max-w-[80%] pl-1"
         />
         <AnimatePresence mode="wait">
-          {search ? (
-            <motion.div
-              key="search-bar"
-              initial={{ scaleX: 0, originX: 1 }} // collapsed at right edge
-              animate={{ scaleX: 1, originX: 1 }} // expand from right
-              exit={{ scaleX: 0, originX: 1 }} // collapse back into right
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="w-full flex h-full items-center relative px-[20px]"
+          <div className="hidden lg:flex justify-evenly font-medium text-[14px] items-center w-full text-[#4d4d4d]">
+            <motion.a
+              href="/"
+              variants={variants}
+              initial="rest"
+              whileHover="hover"
+              animate="rest"
+              transition={{ type: "spring", stiffness: 200, damping: 15 }}
+              className="list-none link1"
             >
-              <div className="rounded-full h-[60%] p-[2px] bg-gradient-to-b w-full from-white to-[#9BC4FF]">
-                <input
-                  type="text"
-                  placeholder="Type Here ..."
-                  className="w-full h-full shadow-inner shadow-[0_4px_25px_3px_rgba(0, 104, 255, 0.08)]  pl-4 rounded-full outline-none border-none bg-white placeholder-[#646464]"
-                />
-              </div>
-              <svg
-                className="absolute scale-70 opacity-70 cursor-pointer right-6"
-                width="40"
-                height="40"
-                onClick={() => setSearch(false)}
-                viewBox="0 0 40 40"
-              >
-                <path
-                  d="M 10,10 L 30,30 M 30,10 L 10,30"
-                  stroke="#0F6089"
-                  stroke-width="3"
-                />
-              </svg>
-            </motion.div>
-          ) : (
-            <div className="flex justify-evenly font-medium text-[14px] items-center w-full text-[#4d4d4d]">
-              <motion.a
-                href="/"
-                variants={variants}
-                initial="rest"
-                whileHover="hover"
-                animate="rest"
-                transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                className="list-none link1"
-              >
-                Home
-              </motion.a>
-              <motion.a
-                href="/about"
-                variants={variants}
-                initial="rest"
-                whileHover="hover"
-                animate="rest"
-                transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                className="list-none link2 items-center"
-              >
-                About{" "}
-                {/* <img
+              Home
+            </motion.a>
+            <motion.a
+              href="/about"
+              variants={variants}
+              initial="rest"
+              whileHover="hover"
+              animate="rest"
+              transition={{ type: "spring", stiffness: 200, damping: 15 }}
+              className="list-none link2 items-center"
+            >
+              About{" "}
+              {/* <img
                   src="/dropdown.png"
                   alt=">"
                   className="max-w-full w-[18px] max-h-full"
                 /> */}
-              </motion.a>
-              <motion.li
-                variants={variants}
-                initial="rest"
-                whileHover="hover"
-                animate="rest"
-                transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                className="list-none link3 relative cursor-pointer"
-                onClick={() => setServiceDrop((prev) => !prev)}
-              >
-                Services{" "}
-                <img
-                  src="/dropdown.png"
-                  alt=">"
-                  className={`max-w-full w-[18px] max-h-full ${
-                    serviceDrop ? "rotate-180" : "rotate-0"
-                  } transition-all duration-300`}
-                />
-                {serviceDrop && (
-                  <div className="top-[40px] bg-white gap-3 absolute left-1/2 -translate-x-1/2 dropdown z-50 rounded-2xl w-fit h-fit whitespace-nowrap py-4 px-2 flex flex-col">
-                    {/* <a
+            </motion.a>
+            <motion.li
+              variants={variants}
+              initial="rest"
+              whileHover="hover"
+              animate="rest"
+              transition={{ type: "spring", stiffness: 200, damping: 15 }}
+              className="list-none link3 relative cursor-pointer"
+              onClick={() => setServiceDrop((prev) => !prev)}
+            >
+              Services{" "}
+              <img
+                src="/dropdown.png"
+                alt=">"
+                className={`max-w-full w-[18px] max-h-full ${
+                  serviceDrop ? "rotate-180" : "rotate-0"
+                } transition-all duration-300`}
+              />
+              {serviceDrop && (
+                <div className="top-[40px] bg-white gap-3 absolute left-1/2 -translate-x-1/2 dropdown z-50 rounded-2xl w-fit h-fit whitespace-nowrap py-4 px-2 flex flex-col">
+                  {/* <a
                       href="/tax"
                       className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
                     >
@@ -153,116 +116,115 @@ function Navbar() {
                       <TaxSvg height="30" />
                       Goods & Service Tax(GST)
                     </a> */}
-                    <a
-                      href="/rbi"
-                      className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
-                    >
-                      <RbiSvg height="30" />
-                      Foreign Exchange RBI
-                    </a>
-                    <a
-                      href="/advisory"
-                      className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
-                    >
-                      <AdvisorySvg height="30" />
-                      Corporate Advisory
-                    </a>
-                    <a
-                      href="/bank"
-                      className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
-                    >
-                      <BankSvg height="30" />
-                      Investment Banking
-                    </a>
-                    <a
-                      href="/citizenship-pr"
-                      className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
-                    >
-                      <PrSvg height="30" />
-                      Citizenship/ PR
-                    </a>
-                    <a
-                      href="/family-office-management"
-                      className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
-                    >
-                      <FomSvg height="30" />
-                      Family Office Management
-                    </a>
-                    <a
-                      href="/business"
-                      className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
-                    >
-                      <SetUpSvg height="30" />
-                      Business set-up Services
-                    </a>
-                  </div>
-                )}
-              </motion.li>
-              <motion.li
-                variants={variants}
-                initial="rest"
-                whileHover="hover"
-                animate="rest"
-                transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                className="list-none link4"
-              >
-                Start-ups{" "}
-                <img
-                  src="/dropdown.png"
-                  alt=">"
-                  className="max-w-full w-[18px] max-h-full"
-                />
-              </motion.li>
-              <motion.li
-                variants={variants}
-                initial="rest"
-                whileHover="hover"
-                animate="rest"
-                transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                className="list-none link5"
-              >
-                Virtual Services{" "}
-                <img
-                  src="/dropdown.png"
-                  alt=">"
-                  className="max-w-full w-[18px] max-h-full"
-                />
-              </motion.li>
-              <motion.li
-                variants={variants}
-                initial="rest"
-                whileHover="hover"
-                animate="rest"
-                transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                className="list-none link6"
-              >
-                Knowledge Center
-              </motion.li>
-              <motion.a
-                href="/career"
-                variants={variants}
-                initial="rest"
-                whileHover="hover"
-                animate="rest"
-                transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                className="list-none link7"
-              >
-                Career
-              </motion.a>
-            </div>
-          )}
+                  <a
+                    href="/rbi"
+                    className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
+                  >
+                    <RbiSvg height="30" />
+                    Foreign Exchange RBI
+                  </a>
+                  <a
+                    href="/advisory"
+                    className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
+                  >
+                    <AdvisorySvg height="30" />
+                    Corporate Advisory
+                  </a>
+                  <a
+                    href="/bank"
+                    className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
+                  >
+                    <BankSvg height="30" />
+                    Investment Banking
+                  </a>
+                  <a
+                    href="/citizenship-pr"
+                    className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
+                  >
+                    <PrSvg height="30" />
+                    Citizenship/ PR
+                  </a>
+                  <a
+                    href="/family-office-management"
+                    className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
+                  >
+                    <FomSvg height="30" />
+                    Family Office Management
+                  </a>
+                  <a
+                    href="/business"
+                    className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1"
+                  >
+                    <SetUpSvg height="30" />
+                    Business set-up Services
+                  </a>
+                </div>
+              )}
+            </motion.li>
+            <motion.li
+              variants={variants}
+              initial="rest"
+              whileHover="hover"
+              animate="rest"
+              transition={{ type: "spring", stiffness: 200, damping: 15 }}
+              className="list-none link4"
+            >
+              Start-ups{" "}
+              <img
+                src="/dropdown.png"
+                alt=">"
+                className="max-w-full w-[18px] max-h-full"
+              />
+            </motion.li>
+            <motion.li
+              variants={variants}
+              initial="rest"
+              whileHover="hover"
+              animate="rest"
+              transition={{ type: "spring", stiffness: 200, damping: 15 }}
+              className="list-none link5"
+            >
+              Virtual Services{" "}
+              <img
+                src="/dropdown.png"
+                alt=">"
+                className="max-w-full w-[18px] max-h-full"
+              />
+            </motion.li>
+            <motion.li
+              variants={variants}
+              initial="rest"
+              whileHover="hover"
+              animate="rest"
+              transition={{ type: "spring", stiffness: 200, damping: 15 }}
+              className="list-none link6"
+            >
+              Knowledge Center
+            </motion.li>
+            <motion.a
+              href="/career"
+              variants={variants}
+              initial="rest"
+              whileHover="hover"
+              animate="rest"
+              transition={{ type: "spring", stiffness: 200, damping: 15 }}
+              className="list-none link7"
+            >
+              Career
+            </motion.a>
+          </div>
         </AnimatePresence>
         <div className="flex items-center gap-2 justify-center">
           <button
             onClick={() => setIsOpen((prev) => !prev)}
-            className="h-[40px] w-[40px] max-w-[60%] flex items-center justify-center md:hidden relative z-[60]"
+            className="h-[40px] w-[40px] max-w-[60%] flex items-center justify-center lg:hidden relative z-[60]"
           >
             <MenuToClose />
           </button>
           <SideMenu isOpen={isOpen} setIsOpen={setIsOpen} />
           <button
             onClick={() => navigate("/contact")}
-            className="hidden md:flex h-[70%] px-3 py-2 rounded-full max-w-[134px] group bg-[#0F6089] text-white font-semibold text-[16px] hover:shadow-[0_4px_32px_0_rgba(15,96,137,0.5)] duration-300 transition items-center gap-1 shadow-md cursor-pointer"
+            className="hidden lg:flex h-[70%] px-3 py-2 rounded-full max-w-[134px] group bg-[#0F6089] text-white font-semibold text-[16px] hover:shadow-[0_4px_32px_0_rgba(15,96,137,0.5)] duration-300 transition items-center gap-1 shadow-md cursor-pointer"
           >
             Contact
             <svg

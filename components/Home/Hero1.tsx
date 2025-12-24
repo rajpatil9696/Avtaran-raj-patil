@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import SplitText from "../ui/SplitText";
+import SplitTextNew from "../ui/SplitTextNew";
 import { motion } from "motion/react";
 
-function Hero1() {
+function Hero1({ isActive }: { isActive: boolean }) {
   return (
     <section className="w-full min-h-[60vh] flex flex-col items-center h-fit bg-[#F8F8F9] relative py-[40px] px-4">
       <img
@@ -19,10 +19,11 @@ function Hero1() {
         Welcome to AVTARAN CAPITAL ,
       </motion.h3>
       <h2 className="font-semibold text-center text-[24px] leading-[130%] tracking-[-1] sm:text-[30px] md:text-[40px] lg:text-5xl text-[#0f6089] relative z-[2]">
-        <SplitText text="Insight designed for" />
-        <SplitText
+        <SplitTextNew text="Insight designed for" isActive={isActive} />
+        <SplitTextNew
           text="today's investor."
           highlight={["Knowledge", "Experience"]}
+          isActive={isActive}
         />
       </h2>
 
