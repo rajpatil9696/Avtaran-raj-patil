@@ -9,14 +9,14 @@ function Boxes() {
           alt="Grid"
           className="absolute w-full h-full inset-0"
         />
-        <p className="text-[60px] md:text-[72px] lg:text-[80px] sans leading-24 relative z-10">
-          <CountUp to={300} />+
+        <p className="text-[60px] md:text-[72px] lg:text-[65px] sans leading-24 relative z-10">
+          <CountUp to={20000} />+
         </p>
-        <p className="text-[22px] md:text-[26px] lg:text-[32px] leading-6 relative z-10">
-          Professionals
+        <p className="text-[22px] md:text-[26px] lg:text-[25px] leading-6 relative z-10">
+          Satisfied Clients
         </p>
         <p className="text-[11px] md:text-[13px] lg:text-[12px] xl:text-sm p-2 absolute bottom-3 pl-3 z-10 left-0">
-          headed by the core team{" "}
+          Trusted globally by our clients
         </p>
       </div>
       <div className="bg-[#618C99] shadow-2xl relative w-full sm:w-[48%] lg:w-[32%] min-h-[220px] md:min-h-[260px] lg:min-h-[272px] rounded-3xl mb-[4vh] pb-[42px] h-fit p-4 md:p-3 overflow-hidden">
@@ -25,14 +25,15 @@ function Boxes() {
           alt="Grid"
           className="absolute w-full h-full inset-0"
         />
-        <p className="text-[60px] md:text-[72px] lg:text-[80px] sans leading-24 relative z-10">
-          <CountUp to={17} />+
+        <p className="text-[60px] md:text-[72px] lg:text-[65px] sans leading-24 relative z-10">
+          <CountUp to={43} />+
         </p>
-        <p className="text-[22px] md:text-[26px] lg:text-[32px] leading-6 relative z-10">
-          Prime Locations
+        <p className="text-[22px] md:text-[26px] lg:text-[25px] leading-6 relative z-10">
+          Countries
         </p>
         <p className="text-[11px] md:text-[13px] lg:text-[12px] xl:text-sm p-2 absolute bottom-3 pl-3 z-10 left-0">
-          Across India, Europe, Canada, USA, Middle East
+          {/* Across India, Europe, Canada, USA, Middle East */}
+          Global presence across continents
         </p>
       </div>
       <div className="bg-[#C9A32F] shadow-2xl relative w-full sm:w-[48%] lg:w-[32%] min-h-[220px] md:min-h-[260px] lg:min-h-[272px] rounded-3xl mb-[4vh] pb-[88px] h-fit p-4 md:p-3 overflow-hidden">
@@ -41,15 +42,15 @@ function Boxes() {
           alt="Grid"
           className="absolute w-full h-full inset-0"
         />
-        <p className="text-[60px] md:text-[72px] lg:text-[80px] sans leading-24 relative z-10">
-          $<CountUp to={20} />
+        <p className="text-[60px] md:text-[72px] lg:text-[65px] sans leading-24 relative z-10">
+          $<CountUp to={500} />
           m+
         </p>
-        <p className="text-[22px] md:text-[26px] lg:text-[32px] leading-6 relative z-10">
-          Under Management
+        <p className="text-[20px] md:text-[26px] lg:text-[25px] leading-6 relative z-10">
+          Transactions Managed
         </p>
         <p className="text-[11px] md:text-[13px] lg:text-[12px] xl:text-sm p-2 absolute bottom-3 pl-3 z-10 left-0">
-          We manage $20m+ worth of capital
+          Value successfully handled
         </p>
       </div>
     </section>
