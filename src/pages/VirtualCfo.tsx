@@ -1,5 +1,6 @@
 // import React from 'react'
-// import arrow from '../../src/assets/arrow-square-up-right-fill 1.png'
+import arrow from '../../src/assets/arrow-square-up-right-fill 1.png'
+import logo from '../../src/assets/avataran logo.png'
 import rs from '../../src/assets/Icon Badge.png'
 const VirtualCfo = () => {
   return (
@@ -39,18 +40,9 @@ const VirtualCfo = () => {
           What Are <span className="text-[#0F6089]">Virtual CFO services?</span>
         </h1>
 
-        {/* grid  */}
+        {/* grid section  */}
         <div className="max-w-[1344px] max-h-[816px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* card for grid */}
-          {/* <div className='max-w-[432px] max-h-[256px] rounded-xl bg-[#ffffff] shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 '>
-                  <div className='flex max-w-[394px] max-h-[38.45px] w-full h-fit'>
-                    <img src={rs} alt="rs" className='h-[38.45px] w-[38.45px] p-[5.5px] rounded-[67.98px]' />
-                    <h1>Stratigic Financial Planning </h1>
-
-                    <p className='max-w-[394px] max-h-[78px]'>The designing of financial strategies that are in accordance with the business goals, which will result in sustainable growth and long-term profitability.</p>
-                  </div>
-              </div> */}
-
           {/* 1 */}
           <div className="max-w-[432px] rounded-[12px] max-h-[256px] bg-white shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 p-5">
             {/* Image and H1 on same line */}
@@ -83,13 +75,15 @@ const VirtualCfo = () => {
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
               <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
-                 Cash Flow Management
+                Cash Flow Management
               </h1>
             </div>
 
             {/* Description below */}
             <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
-             Critical analysis and cash flow optimization, which aims at having all the required funds for the business and operations efficiency..
+              Critical analysis and cash flow optimization, which aims at having
+              all the required funds for the business and operations
+              efficiency..
             </p>
           </div>
 
@@ -103,13 +97,16 @@ const VirtualCfo = () => {
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
               <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
-               Budgeting and Forecasting
+                Budgeting and Forecasting
               </h1>
             </div>
 
             {/* Description below */}
             <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
-              Developing detailed budgets and financial forecasts is the primary duty of CFO Services India company, which allows, among other things, us to predict outcomes of financial decisions and, therefore, to make more reasonable decisions.
+              Developing detailed budgets and financial forecasts is the primary
+              duty of CFO Services India company, which allows, among other
+              things, us to predict outcomes of financial decisions and,
+              therefore, to make more reasonable decisions.
             </p>
           </div>
 
@@ -129,7 +126,9 @@ const VirtualCfo = () => {
 
             {/* Description below */}
             <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
-              Offering in-depth financial reports, making sense of the data to give the business valuable tips and helping identify the business's financial health.
+              Offering in-depth financial reports, making sense of the data to
+              give the business valuable tips and helping identify the
+              business's financial health.
             </p>
           </div>
 
@@ -143,13 +142,15 @@ const VirtualCfo = () => {
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
               <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
-               Risk Management and Compliance
+                Risk Management and Compliance
               </h1>
             </div>
 
             {/* Description below */}
             <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
-             Being able to identify the possible financial risks of the company, making sure that all financial regulations and standards are met and protecting the business interests.
+              Being able to identify the possible financial risks of the
+              company, making sure that all financial regulations and standards
+              are met and protecting the business interests.
             </p>
           </div>
 
@@ -169,7 +170,8 @@ const VirtualCfo = () => {
 
             {/* Description below */}
             <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
-              Advising on investment strategies and capital allocation of the highest return and supporting company growth.
+              Advising on investment strategies and capital allocation of the
+              highest return and supporting company growth.
             </p>
           </div>
 
@@ -189,8 +191,53 @@ const VirtualCfo = () => {
 
             {/* Description below */}
             <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
-              Virtual CFOs utilize the right automation tools for different labor-intensive finance processes like MIS, payroll, and reconciliation.
+              Virtual CFOs utilize the right automation tools for different
+              labor-intensive finance processes like MIS, payroll, and
+              reconciliation.
             </p>
+          </div>
+        </div>
+        {/* Bottom section  */}
+        <div className="max-w-[1440px] h-[700px] ">
+          <div className="white"> white DIV </div>
+
+          <div className="black w-screen h-[329px] bg-[#000000] flex relative items-center justify-center ">
+            <div className="flex flex-col w-[292px] h-[123px] gap-[12px] opacity-100  absolute top-[100px] left-[25px] ">
+              <h1 className="h-[31px] text-[#ffffff] font-semibold text-[24px] leading-[130%] tracking-[-1px] align-middle ">
+                Business Hours
+              </h1>
+              <p className="text-[#FFFFFF] font-bold text-[16px] leading-[100%] tracking-[-1px] align-middle ">
+                <span className="text-[#0F6089] font-semibold ">
+                  Monday-Friday
+                </span>{" "}
+                09:00am-07:00pm
+              </p>
+              <p className="text-[#FFFFFF] font-bold text-[16px] leading-[100%] tracking-[-1px] align-middle">
+                <span className="text-[#0F6089] font-semibold  ">Saturday</span>{" "}
+                09:00am-12:00pm
+              </p>
+              <p className="text-[#FFFFFF] font-bold text-[16px] leading-[100%] tracking-[-1px] align-middle">
+                Sunday{" "}
+                <span className="text-[#0F6089] font-semibold ">Closed</span>
+              </p>
+            </div>
+
+            <div className="w-[695px] h-[138px] rounded-full bg-white flex items-center justify-between px-8">
+              <div className="flex items-center gap-4">
+                <img src={logo} alt="logo" className="h-16 w-16" />
+                <h1 className="text-[#0F6089] font-bold text-[28px] leading-none tracking-tight uppercase whitespace-nowrap">
+                  AVATARAN CAPITAL
+                </h1>
+              </div>
+
+              {/* Contact Button */}
+              <div className="bg-[#0F6089] rounded-full flex items-center gap-3 px-10 py-6 hover:bg-[#0d5273] transition-colors cursor-pointer">
+                <p className="font-semibold text-[22px] leading-none tracking-tight text-white whitespace-nowrap">
+                  Contact Us
+                </p>
+                <img src={arrow} alt="arrow" className="h-8 w-8" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
