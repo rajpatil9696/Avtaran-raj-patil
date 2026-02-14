@@ -4,6 +4,7 @@ import logo from '../../src/assets/avataran logo.png'
 import rs from '../../src/assets/Icon Badge.png'
 import phone from '../../src/assets/phone image.png'
 import girl from '../../src/assets/girl image.png'
+import mobile from '../../src/assets/mobile.png'
 const VirtualCfo = () => {
   return (
     <>
@@ -11,8 +12,9 @@ const VirtualCfo = () => {
         <h1 className="text-[37px] font-semibold leading-[130%] tracking-[-1px] text-center">
           What Are <span className="text-[#0F6089]">Virtual CFO services?</span>
         </h1>
-
-        <div className="mt-10 max-w-[775px] max-h-[234px] text-[#000000] text-[16px] font-normal tracking-[-1px] leading-[160%]">
+        <div className='main flex relative'>
+          <div className='left '>
+          <div className="mt-10 max-w-[775px] max-h-[234px] text-[#000000] text-[16px] font-normal tracking-[-1px] leading-[160%]">
           <p>
             Virtual CFOs (Chief Financial Officers) are the strategic advisors
             and financial performance overseers of a business who work remotely.
@@ -35,9 +37,14 @@ const VirtualCfo = () => {
           </p>
           {/* <img className='max-w-[18px] max-h-[18px] ' src={arrow} alt="->" /> */}
         </button>
+          </div>
+          <div className="right absolute w-[888px] h-[648px] top-[-100px] left-[644px] rotate-[7.1deg] -z-30">
+            <img src={mobile} alt="mobile" />
+          </div>
+        </div>
       </div>
 
-      <div className="max-w-[1440px] h-[1001px] mt-4">
+      <div className="max-w-[1440px] h-[1001px] mt-[100px] z-30 pt-[40px]">
         <h1 className="text-[37px] font-semibold leading-[130%] tracking-[-1px] text-center">
           What Are <span className="text-[#0F6089]">Virtual CFO services?</span>
         </h1>
