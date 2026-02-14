@@ -1,5 +1,5 @@
 import TiltedCard from "../../src/components/TiltedCard";
-// import Svg1 from "../Home/Services/Svg1";
+ import Svg1 from "../Home/Services/Svg1";
 import Svg2 from "../Home/Services/Svg2";
 import Svg3 from "../Home/Services/Svg3";
 import Svg4 from "../Home/Services/Svg4";
@@ -10,6 +10,7 @@ import AnimatePara from "../ui/AnimatePara";
 import SplitText from "../ui/SplitText";
 import ScrollStack from "../../src/components/ScrollStack";
 import { useEffect, useState } from "react";
+import mobile from '../../src/assets/mobile.png'
 
 function Services() {
   const [isMobile, setIsMobile] = useState(false);
@@ -154,6 +155,28 @@ function Services() {
                 </p>
                 <img
                   src="/services/passport.png"
+                  alt="Note1"
+                  className="absolute bottom-0 right-0 max-w-[50%] max-h-[50%] z-[1] pointer-events-none"
+                />
+              </>
+            }
+          />
+          <TiltedCard
+            href="/virtual-cfo"
+            innerClassName="p-4 rounded col-span-1 md:col-span-1 lg:col-span-2 md:row-span-1 lg:row-span-2 pb-[10%] md:pb-[20%] md:pr-[8%]"
+            className="bg-blue-200 serviceBox relative overflow-hidden"
+            imgSrc="/grid.png"
+            overlayContent={
+              <>
+                <Svg1/>
+                <h2 className="font-semibold text-[20px] sm:text-[22px] md:text-[26px] lg:text-[32px] text-center relative z-10">
+                  <SplitText text="Virtual CFO" />
+                </h2>
+                <p className="text-[16px] text-start relative z-10 pr-[30%] pb-[20%]">
+                  Virtual CFOs (Chief Financial Officers) are the strategic advisors and financial performance overseers of a business who work remotely. 
+                </p>
+                <img
+                  src={mobile}
                   alt="Note1"
                   className="absolute bottom-0 right-0 max-w-[50%] max-h-[50%] z-[1] pointer-events-none"
                 />
