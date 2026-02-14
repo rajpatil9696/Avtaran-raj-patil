@@ -1,5 +1,5 @@
-import React from 'react'
-import arrow from '../../src/assets/arrow-square-up-right-fill 1.png'
+// import React from 'react'
+// import arrow from '../../src/assets/arrow-square-up-right-fill 1.png'
 import rs from '../../src/assets/Icon Badge.png'
 const VirtualCfo = () => {
   return (
@@ -26,7 +26,7 @@ const VirtualCfo = () => {
           </p>
         </div>
 
-        <button className="flex flex-row max-w-[160px] max-h-[56px] rounded-2xl  bg-[#0F6089] px-[16px] py-[24px] gap-[4px] align-middle mt-10 ">
+        <button className="flex flex-row max-w-[160px] max-h-[56px] rounded-2xl  bg-[#0F6089] px-[16px] py-[24px] gap-[4px] align-middle mt-10 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 ">
           <p className="font-semibold text-[16px] text-[#F2F2F2] leading-[130%]">
             Get in Touch
           </p>
@@ -60,13 +60,13 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="text-lg font-semibold">
+              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
                 Strategic Financial Planning
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-sm text-gray-600 mt-2">
+            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
               The designing of financial strategies that are in accordance with
               the business goals, which will result in sustainable growth and
               long-term profitability.
@@ -82,16 +82,14 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="text-lg font-semibold">
-                Strategic Financial Planning
+              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+                 Cash Flow Management
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-sm text-gray-600 mt-2">
-              The designing of financial strategies that are in accordance with
-              the business goals, which will result in sustainable growth and
-              long-term profitability.
+            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+             Critical analysis and cash flow optimization, which aims at having all the required funds for the business and operations efficiency..
             </p>
           </div>
 
@@ -104,16 +102,14 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="text-lg font-semibold">
-                Strategic Financial Planning
+              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+               Budgeting and Forecasting
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-sm text-gray-600 mt-2">
-              The designing of financial strategies that are in accordance with
-              the business goals, which will result in sustainable growth and
-              long-term profitability.
+            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+              Developing detailed budgets and financial forecasts is the primary duty of CFO Services India company, which allows, among other things, us to predict outcomes of financial decisions and, therefore, to make more reasonable decisions.
             </p>
           </div>
 
@@ -126,16 +122,14 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="text-lg font-semibold">
-                Strategic Financial Planning
+              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+                Financial Reporting and Analysis
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-sm text-gray-600 mt-2">
-              The designing of financial strategies that are in accordance with
-              the business goals, which will result in sustainable growth and
-              long-term profitability.
+            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+              Offering in-depth financial reports, making sense of the data to give the business valuable tips and helping identify the business's financial health.
             </p>
           </div>
 
@@ -148,16 +142,14 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="text-lg font-semibold">
-                Strategic Financial Planning
+              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+               Risk Management and Compliance
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-sm text-gray-600 mt-2">
-              The designing of financial strategies that are in accordance with
-              the business goals, which will result in sustainable growth and
-              long-term profitability.
+            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+             Being able to identify the possible financial risks of the company, making sure that all financial regulations and standards are met and protecting the business interests.
             </p>
           </div>
 
@@ -170,16 +162,14 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="text-lg font-semibold">
-                Strategic Financial Planning
+              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+                Investment and Capital Management
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-sm text-gray-600 mt-2">
-              The designing of financial strategies that are in accordance with
-              the business goals, which will result in sustainable growth and
-              long-term profitability.
+            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+              Advising on investment strategies and capital allocation of the highest return and supporting company growth.
             </p>
           </div>
 
@@ -192,16 +182,14 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="text-lg font-semibold">
-                Strategic Financial Planning
+              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+                Improving ROI Using Automation
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-sm text-gray-600 mt-2">
-              The designing of financial strategies that are in accordance with
-              the business goals, which will result in sustainable growth and
-              long-term profitability.
+            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+              Virtual CFOs utilize the right automation tools for different labor-intensive finance processes like MIS, payroll, and reconciliation.
             </p>
           </div>
         </div>
