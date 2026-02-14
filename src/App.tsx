@@ -14,6 +14,7 @@ import Business from "./pages/Business";
 import PR from "./pages/PR";
 import Advisory from "./pages/Advisory";
 import Career from "./pages/Career";
+import VirtualCfo from "./pages/VirtualCfo";
 
 function AppRouter() {
   return (
@@ -31,6 +32,7 @@ function AppRouter() {
         <Route path="/family-office-management" element={<FOM />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/virtual-cfo" element={<VirtualCfo/>}/>
       </Routes>
     </AnimatePresence>
   );

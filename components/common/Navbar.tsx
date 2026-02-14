@@ -10,6 +10,7 @@ import AdvisorySvg from "../../src/constant/AdvisorySvg";
 import BankSvg from "../../src/constant/BankSvg";
 import FomSvg from "../../src/constant/FomSvg";
 import SetUpSvg from "../../src/constant/SetUpSvg";
+import VirtualCfoSvg from '../../src/constant/VirtualCfoSvg'
 
 const variants = {
   rest: {
@@ -45,6 +46,7 @@ function Navbar() {
   // const [search, setSearch] = useState(false);
   const [serviceDrop, setServiceDrop] = useState(false);
   const navigate = useNavigate();
+  const[virtualServiceDrop,setvirtualServiceDrop]=useState(false);
 
   return (
     <nav className="w-full px-[2vw] pt-[20px] fixed top-0 z-50 h-[100px] bg-[#f8f8f8]">
@@ -183,13 +185,36 @@ function Navbar() {
               animate="rest"
               transition={{ type: "spring", stiffness: 200, damping: 15 }}
               className="list-none link5"
+              onClick={() => setvirtualServiceDrop((prev) => !prev)}
             >
               Virtual Services{" "}
               <img
                 src="/dropdown.png"
                 alt=">"
-                className="max-w-full w-[18px] max-h-full"
+                className={`max-w-full w-[18px] max-h-full ${
+                  virtualServiceDrop ? "rotate-180" : "rotate-0"
+                } transition-all duration-300`}
               />
+              {virtualServiceDrop && (
+                <div
+                  className="
+                             absolute top-[40px] left-1/2 -translate-x-1/2
+                           bg-white z-50
+                             rounded-2xl
+                             w-fit h-fit
+                             whitespace-nowrap
+                             py-4 px-3
+                            flex flex-col gap-3
+                            shadow-lg
+                                       "
+                >
+                  <a href="/virtual-cfo" className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1">
+                    <VirtualCfoSvg height="30" width="30" />
+                    Virtual CFO 
+                  </a>
+        
+                </div>
+              )}
             </motion.li>
             <motion.li
               variants={variants}
