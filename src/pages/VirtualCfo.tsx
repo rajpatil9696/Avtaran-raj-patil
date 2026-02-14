@@ -36,14 +36,7 @@ const VirtualCfo = () => {
 
             {/* Button */}
             <button
-              className="flex items-center justify-center 
-                         w-[140px] h-[45px] lg:w-[160px] lg:h-[56px] 
-                         rounded-2xl bg-[#0F6089] 
-                         mt-6 lg:mt-10 
-                         shadow-md hover:shadow-xl 
-                         transform hover:scale-105 
-                         transition-all duration-300"
-            >
+              className="flex items-center justify-center w-[140px] h-[45px] lg:w-[160px] lg:h-[56px] rounded-2xl bg-[#0F6089]  mt-6 lg:mt-10  shadow-md hover:shadow-xl  transform hover:scale-105 transition-all duration-300">
               <p className="font-semibold text-[14px] lg:text-[16px] font-sans text-[#F2F2F2] leading-[130%]">
                 Get in Touch
               </p>
@@ -57,7 +50,7 @@ const VirtualCfo = () => {
       </div>
 
       <div className="max-w-[1440px] h-[1001px] mt-[100px] z-30 pt-[40px]">
-        <h1 className="text-[37px] font-sans font-semibold leading-[130%] tracking-[-1px] text-center">
+        <h1 className="text-[24px] lg:text-[37px] font-sans font-semibold leading-[130%] tracking-[-0.5px] lg:tracking-[-1px] text-center">
           What Are <span className="text-[#0F6089]">Virtual CFO services?</span>
         </h1>
 
