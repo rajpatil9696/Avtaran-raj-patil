@@ -8,37 +8,49 @@ import mobile from '../../src/assets/mobile.png'
 const VirtualCfo = () => {
   return (
     <>
-      <div className="Home w-full max-w-[1440px] mx-auto py-16 px-20">
-        <h1 className="text-[37px] font-sans font-semibold leading-[130%] tracking-[-1px] text-center">
+      <div className="Home w-full max-w-[1440px] mx-auto py-10 px-5 lg:py-16 lg:px-20">
+        {/* Heading */}
+        <h1 className="text-[24px] lg:text-[37px] font-sans font-semibold leading-[130%] tracking-[-0.5px] lg:tracking-[-1px] text-center">
           What Are <span className="text-[#0F6089]">Virtual CFO services?</span>
         </h1>
-        <div className='main flex relative'>
-          <div className='left '>
-          <div className="mt-10 font-sans max-w-[775px] max-h-[234px] text-[#000000] text-[16px] font-normal tracking-[-1px] leading-[160%]">
-          <p>
-            Virtual CFOs (Chief Financial Officers) are the strategic advisors
-            and financial performance overseers of a business who work remotely.
-            Virtual CFOs or fractional CFOs are finance pros with multi-industry
-            experience and who provide financial advice and implementation
-            support to an organization.
-          </p>
+        <div className="main flex flex-col lg:flex-row relative items-center lg:items-start">
+          {/* Left Content */}
+          <div className="left">
+            <div className="mt-6 lg:mt-10 font-sans max-w-full lg:max-w-[775px] text-[#000000] text-[14px] lg:text-[16px] font-normal tracking-[-0.5px] lg:tracking-[-1px] leading-[160%]">
+              <p>
+                Virtual CFOs (Chief Financial Officers) are the strategic
+                advisors and financial performance overseers of a business who
+                work remotely. Virtual CFOs or fractional CFOs are finance pros
+                with multi-industry experience and who provide financial advice
+                and implementation support to an organization.
+              </p>
 
-          <p className="mt-4">
-            Virtual CFO services are very important to the entrepreneurial
-            world, particularly small to medium-sized enterprises and start-up
-            businesses because these providers offer expert skills at a much
-            cheaper rate without the need to get a full-time CFO...
-          </p>
-        </div>
+              <p className="mt-4">
+                Virtual CFO services are very important to the entrepreneurial
+                world, particularly small to medium-sized enterprises and
+                start-up businesses because these providers offer expert skills
+                at a much cheaper rate without the need to get a full-time
+                CFO...
+              </p>
+            </div>
 
-        <button className="flex flex-row max-w-[160px] max-h-[56px] rounded-2xl  bg-[#0F6089] px-[16px] py-[24px] gap-[4px] align-middle mt-10 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 ">
-          <p className="font-semibold text-[16px] font-sans text-[#F2F2F2] leading-[130%]">
-            Get in Touch
-          </p>
-          {/* <img className='max-w-[18px] max-h-[18px] ' src={arrow} alt="->" /> */}
-        </button>
+            {/* Button */}
+            <button
+              className="flex items-center justify-center 
+                         w-[140px] h-[45px] lg:w-[160px] lg:h-[56px] 
+                         rounded-2xl bg-[#0F6089] 
+                         mt-6 lg:mt-10 
+                         shadow-md hover:shadow-xl 
+                         transform hover:scale-105 
+                         transition-all duration-300"
+            >
+              <p className="font-semibold text-[14px] lg:text-[16px] font-sans text-[#F2F2F2] leading-[130%]">
+                Get in Touch
+              </p>
+            </button>
           </div>
-          <div className="right absolute w-[888px] h-[648px] top-[-100px] left-[644px] rotate-[7.1deg] -z-30">
+          {/* Right Image - Hidden on Mobile */}
+          <div className="hidden lg:block absolute w-[888px] h-[648px] top-[-100px] left-[644px] rotate-[7.1deg] -z-30">
             <img src={mobile} alt="mobile" />
           </div>
         </div>
@@ -209,16 +221,22 @@ const VirtualCfo = () => {
         {/* Bottom section  */}
         <div className="max-w-[1440px] h-[700px] mt-[120px]">
           {/* white div  */}.
-          <div className="relative w-full h-[281px] bg-white">
-            <div className="absolute w-[623px] h-[58px] top-[13px] left-[420px] font-sans font-semibold text-[48px] leading-[120%] tracking-[-0.01em]">
-              <h1><span className='text-[#0F6089]'>Ready</span> to work <span className='text-[#0F6089] ml-[80px]'>With US</span></h1>
+          <div className="relative w-full bg-white h-auto lg:h-[281px] py-12 lg:py-0 flex flex-col lg:block items-center">
+            {/* Main Heading */}
+            <div className="relative lg:absolute top-0 lg:top-[13px] left-0 lg:left-[420px] font-sans font-semibold text-[26px] lg:text-[48px] leading-[120%] tracking-[-0.01em] text-center lg:text-left">
+              <h1>
+                <span className="text-[#0F6089]">Ready</span> to work{" "}
+                <span className="text-[#0F6089] lg:ml-[80px]">With US</span>
+              </h1>
             </div>
 
-            <div className="absolute font-sans w-[457px] h-[115px] top-[100px] left-[80px] text-[#0F608966] font-semibold text-[96px] leading-[120%] tracking-[-0.06em]">
+            {/* AVATARAN CAPITAL - Combined on Mobile */}
+            <div className="relative lg:absolute  mt-6 lg:mt-0 top-0 lg:top-[100px] left-0 lg:left-[80px] font-sans font-semibold text-[40px] lg:text-[96px]  leading-[120%] tracking-[-0.06em]  text-[#0F608966] text-center lg:text-left">
               <h1>AVATARAN</h1>
             </div>
 
-            <div className="absolute w-[448px] h-[320px] top-[1px] left-[500px]">
+            {/* Girl Image - Hidden on Mobile */}
+            <div className=" hidden lg:block  absolute  w-[448px] h-[320px]  top-[1px] left-[500px]">
               <img
                 src={girl}
                 alt="girl"
@@ -226,49 +244,75 @@ const VirtualCfo = () => {
               />
             </div>
 
-            <div className="absolute font-sans w-[365px] h-[115px] top-[130px] left-[900px] text-[#1A1A1A66] font-bold text-[96px] leading-[120%] tracking-[-0.06em]">
+            {/* CAPITAL - Right Side Desktop */}
+            <div className=" relative lg:absolute top-0 lg:top-[130px] left-0 lg:left-[900px] font-sans font-bold text-[40px] lg:text-[96px] leading-[120%] tracking-[-0.06em]  text-[#1A1A1A66] text-center lg:text-left">
               <h1>CAPITAL</h1>
             </div>
           </div>
-          {/* Block div  */}
-          <div className="black w-screen h-[329px] bg-[#000000] flex relative items-center justify-center ">
-            <div className="flex flex-col w-[292px] h-[123px] gap-[12px] opacity-100  absolute top-[100px] left-[25px] ">
-              <h1 className="h-[31px] font-sans text-[#ffffff] font-semibold text-[24px] leading-[130%] tracking-[-1px] align-middle ">
+          {/* Black div  */}
+          <div
+            className="black w-screen bg-black  flex flex-col lg:block  items-center  py-12 lg:py-0  relative lg:h-[329px]">
+            {/* Business Hours */}
+            <div
+              className="flex flex-col gap-3 w-full max-w-[292px] text-center lg:text-left lg:absolute lg:top-[100px] lg:left-[25px]">
+              <h1
+                className="font-sans text-white font-semibold  text-[20px] lg:text-[24px] leading-[130%] tracking-[-1px]">
                 Business Hours
               </h1>
-              <p className="text-[#FFFFFF] font-sans font-bold text-[16px] leading-[100%] tracking-[-1px] align-middle ">
-                <span className="text-[#0F6089] font-semibold ">
+
+              <p className="text-white font-sans font-bold text-[14px] lg:text-[16px] leading-[100%] tracking-[-1px]">
+                <span className="text-[#0F6089] font-semibold">
                   Monday-Friday
                 </span>{" "}
                 09:00am-07:00pm
               </p>
-              <p className="text-[#FFFFFF] font-sans font-bold text-[16px] leading-[100%] tracking-[-1px] align-middle">
-                <span className="text-[#0F6089] font-semibold  ">Saturday</span>{" "}
+
+              <p className="text-white font-sans font-bold text-[14px] lg:text-[16px] leading-[100%] tracking-[-1px]">
+                <span className="text-[#0F6089] font-semibold">Saturday</span>{" "}
                 09:00am-12:00pm
               </p>
-              <p className="text-[#FFFFFF] font-sans font-bold text-[16px] leading-[100%] tracking-[-1px] align-middle">
+
+              <p className="text-white font-sans font-bold text-[14px] lg:text-[16px] leading-[100%] tracking-[-1px]">
                 Sunday{" "}
-                <span className="text-[#0F6089] font-semibold ">Closed</span>
+                <span className="text-[#0F6089] font-semibold">Closed</span>
               </p>
             </div>
 
-            <div className="w-[695px] h-[138px] rounded-full bg-white flex  items-center justify-between px-8 absolute top-[60px] left-[372px]">
-              <div className="flex items-center flex-col gap-2">
-                <img src={logo} alt="logo" className="h-16 w-16" />
-                <h1 className="text-[#0F6089] font-sans font-bold text-[28px] leading-none tracking-tight uppercase whitespace-nowrap">
+            {/* White Capsule */}
+            <div
+              className="mt-10 lg:mt-0 w-full max-w-[695px] rounded-full bg-white  flex flex-col lg:flex-row  items-center justify-between  gap-6 lg:gap-0 px-6 lg:px-8 py-6 lg:absolute lg:top-[60px] lg:left-[372px]">
+              {/* Logo + Name */}
+              <div className="flex flex-col items-center gap-2 text-center">
+                <img
+                  src={logo}
+                  alt="logo"
+                  className="h-14 w-14 lg:h-16 lg:w-16"
+                />
+                <h1
+                  className="text-[#0F6089] font-sans font-bold  text-[20px] lg:text-[28px] leading-none tracking-tight uppercase">
                   AVATARAN CAPITAL
                 </h1>
               </div>
 
-              <div className="bg-[#0F6089] rounded-full flex items-center gap-3 px-10 py-6 hover:bg-[#0d5273] transition-colors cursor-pointer">
-                <p className="font-semibold text-[22px] leading-none tracking-tight text-white whitespace-nowrap">
+              {/* Button */}
+              <div
+                className="bg-[#0F6089] rounded-full flex items-center gap-3  px-6 lg:px-10 py-4 lg:py-6   hover:bg-[#0d5273]  transition-colors cursor-pointer">
+                <p
+                  className="font-semibold text-[16px] lg:text-[22px] leading-none tracking-tight text-white">
                   Contact Us
                 </p>
-                <img src={arrow} alt="arrow" className="h-8 w-8" />
+
+                <img
+                  src={arrow}
+                  alt="arrow"
+                  className="h-6 w-6 lg:h-8 lg:w-8"
+                />
               </div>
             </div>
 
-            <div className="w-[425.11px] h-[318.86px] opacity-100 rotate-[7.29deg]  absolute top-[50.68px] left-[1055px]">
+            {/* Phone Image - Hidden on Mobile */}
+            <div
+              className=" hidden lg:block  absolute w-[425px]  top-[50px] left-[1055px] rotate-[7.29deg]">
               <img src={phone} alt="phone" />
             </div>
           </div>
