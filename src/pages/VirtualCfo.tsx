@@ -2,6 +2,7 @@
 import arrow from '../../src/assets/arrow-square-up-right-fill 1.png'
 import logo from '../../src/assets/avataran logo.png'
 import rs from '../../src/assets/Icon Badge.png'
+import phone from '../../src/assets/phone image.png'
 const VirtualCfo = () => {
   return (
     <>
@@ -201,6 +202,7 @@ const VirtualCfo = () => {
         <div className="max-w-[1440px] h-[700px] ">
           <div className="white"> white DIV </div>
 
+                {/* Block div  */}
           <div className="black w-screen h-[329px] bg-[#000000] flex relative items-center justify-center ">
             <div className="flex flex-col w-[292px] h-[123px] gap-[12px] opacity-100  absolute top-[100px] left-[25px] ">
               <h1 className="h-[31px] text-[#ffffff] font-semibold text-[24px] leading-[130%] tracking-[-1px] align-middle ">
@@ -222,21 +224,25 @@ const VirtualCfo = () => {
               </p>
             </div>
 
-            <div className="w-[695px] h-[138px] rounded-full bg-white flex items-center justify-between px-8">
-              <div className="flex items-center gap-4">
+            <div className="w-[695px] h-[138px] rounded-full bg-white flex  items-center justify-between px-8 absolute top-[60px] left-[372px]">
+
+              <div className="flex items-center flex-col gap-2">
                 <img src={logo} alt="logo" className="h-16 w-16" />
                 <h1 className="text-[#0F6089] font-bold text-[28px] leading-none tracking-tight uppercase whitespace-nowrap">
                   AVATARAN CAPITAL
                 </h1>
               </div>
 
-              {/* Contact Button */}
               <div className="bg-[#0F6089] rounded-full flex items-center gap-3 px-10 py-6 hover:bg-[#0d5273] transition-colors cursor-pointer">
                 <p className="font-semibold text-[22px] leading-none tracking-tight text-white whitespace-nowrap">
                   Contact Us
                 </p>
                 <img src={arrow} alt="arrow" className="h-8 w-8" />
               </div>
+            </div>
+
+            <div className='w-[425.11px] h-[318.86px] opacity-100 rotate-[7.29deg]  absolute top-[50.68px] left-[1055px]'>
+                <img src={phone} alt="phone" />
             </div>
           </div>
         </div>
