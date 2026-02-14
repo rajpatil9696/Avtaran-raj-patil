@@ -3,6 +3,7 @@ import arrow from '../../src/assets/arrow-square-up-right-fill 1.png'
 import logo from '../../src/assets/avataran logo.png'
 import rs from '../../src/assets/Icon Badge.png'
 import phone from '../../src/assets/phone image.png'
+import girl from '../../src/assets/girl image.png'
 const VirtualCfo = () => {
   return (
     <>
@@ -199,10 +200,30 @@ const VirtualCfo = () => {
           </div>
         </div>
         {/* Bottom section  */}
-        <div className="max-w-[1440px] h-[700px] ">
-          <div className="white"> white DIV </div>
+        <div className="max-w-[1440px] h-[700px] mt-[120px]">
+          {/* white div  */}.
+          <div className="relative w-full h-[281px] bg-white">
+            <div className="absolute w-[623px] h-[58px] top-[13px] left-[380px] font-semibold text-[48px] leading-[120%] tracking-[-0.01em]">
+              <h1><span className='text-[#0F6089]'>Ready</span> to work <span className='text-[#0F6089] ml-[60px]'>With US</span></h1>
+            </div>
 
-                {/* Block div  */}
+            <div className="absolute w-[457px] h-[115px] top-[100px] left-[80px] text-[#0F608966] font-semibold text-[96px] leading-[120%] tracking-[-0.06em]">
+              <h1>AVATARAN</h1>
+            </div>
+
+            <div className="absolute w-[448px] h-[320px] top-[1px] left-[500px]">
+              <img
+                src={girl}
+                alt="girl"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="absolute w-[365px] h-[115px] top-[130px] left-[900px] text-[#1A1A1A66] font-bold text-[96px] leading-[120%] tracking-[-0.06em]">
+              <h1>CAPITAL</h1>
+            </div>
+          </div>
+          {/* Block div  */}
           <div className="black w-screen h-[329px] bg-[#000000] flex relative items-center justify-center ">
             <div className="flex flex-col w-[292px] h-[123px] gap-[12px] opacity-100  absolute top-[100px] left-[25px] ">
               <h1 className="h-[31px] text-[#ffffff] font-semibold text-[24px] leading-[130%] tracking-[-1px] align-middle ">
@@ -225,7 +246,6 @@ const VirtualCfo = () => {
             </div>
 
             <div className="w-[695px] h-[138px] rounded-full bg-white flex  items-center justify-between px-8 absolute top-[60px] left-[372px]">
-
               <div className="flex items-center flex-col gap-2">
                 <img src={logo} alt="logo" className="h-16 w-16" />
                 <h1 className="text-[#0F6089] font-bold text-[28px] leading-none tracking-tight uppercase whitespace-nowrap">
@@ -241,8 +261,8 @@ const VirtualCfo = () => {
               </div>
             </div>
 
-            <div className='w-[425.11px] h-[318.86px] opacity-100 rotate-[7.29deg]  absolute top-[50.68px] left-[1055px]'>
-                <img src={phone} alt="phone" />
+            <div className="w-[425.11px] h-[318.86px] opacity-100 rotate-[7.29deg]  absolute top-[50.68px] left-[1055px]">
+              <img src={phone} alt="phone" />
             </div>
           </div>
         </div>
