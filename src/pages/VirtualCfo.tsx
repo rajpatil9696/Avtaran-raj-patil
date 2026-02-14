@@ -9,12 +9,12 @@ const VirtualCfo = () => {
   return (
     <>
       <div className="Home w-full max-w-[1440px] mx-auto py-16 px-20">
-        <h1 className="text-[37px] font-semibold leading-[130%] tracking-[-1px] text-center">
+        <h1 className="text-[37px] font-sans font-semibold leading-[130%] tracking-[-1px] text-center">
           What Are <span className="text-[#0F6089]">Virtual CFO services?</span>
         </h1>
         <div className='main flex relative'>
           <div className='left '>
-          <div className="mt-10 max-w-[775px] max-h-[234px] text-[#000000] text-[16px] font-normal tracking-[-1px] leading-[160%]">
+          <div className="mt-10 font-sans max-w-[775px] max-h-[234px] text-[#000000] text-[16px] font-normal tracking-[-1px] leading-[160%]">
           <p>
             Virtual CFOs (Chief Financial Officers) are the strategic advisors
             and financial performance overseers of a business who work remotely.
@@ -32,7 +32,7 @@ const VirtualCfo = () => {
         </div>
 
         <button className="flex flex-row max-w-[160px] max-h-[56px] rounded-2xl  bg-[#0F6089] px-[16px] py-[24px] gap-[4px] align-middle mt-10 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 ">
-          <p className="font-semibold text-[16px] text-[#F2F2F2] leading-[130%]">
+          <p className="font-semibold text-[16px] font-sans text-[#F2F2F2] leading-[130%]">
             Get in Touch
           </p>
           {/* <img className='max-w-[18px] max-h-[18px] ' src={arrow} alt="->" /> */}
@@ -45,7 +45,7 @@ const VirtualCfo = () => {
       </div>
 
       <div className="max-w-[1440px] h-[1001px] mt-[100px] z-30 pt-[40px]">
-        <h1 className="text-[37px] font-semibold leading-[130%] tracking-[-1px] text-center">
+        <h1 className="text-[37px] font-sans font-semibold leading-[130%] tracking-[-1px] text-center">
           What Are <span className="text-[#0F6089]">Virtual CFO services?</span>
         </h1>
 
@@ -61,13 +61,13 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+              <h1 className="font-semibold font-sans text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
                 Strategic Financial Planning
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+            <p className="max-w-[394px] font-sans text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
               The designing of financial strategies that are in accordance with
               the business goals, which will result in sustainable growth and
               long-term profitability.
@@ -83,13 +83,13 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+              <h1 className="font-semibold font-sans text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
                 Cash Flow Management
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+            <p className="max-w-[394px] font-sans text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
               Critical analysis and cash flow optimization, which aims at having
               all the required funds for the business and operations
               efficiency..
@@ -105,13 +105,13 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+              <h1 className="font-semibold font-sans text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
                 Budgeting and Forecasting
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+            <p className="max-w-[394px] font-sans text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
               Developing detailed budgets and financial forecasts is the primary
               duty of CFO Services India company, which allows, among other
               things, us to predict outcomes of financial decisions and,
@@ -128,13 +128,13 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+              <h1 className="font-semibold font-sans text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
                 Financial Reporting and Analysis
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+            <p className="max-w-[394px] font-sans text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
               Offering in-depth financial reports, making sense of the data to
               give the business valuable tips and helping identify the
               business's financial health.
@@ -150,13 +150,13 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+              <h1 className="font-semibold font-sans text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
                 Risk Management and Compliance
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+            <p className="max-w-[394px] font-sans text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
               Being able to identify the possible financial risks of the
               company, making sure that all financial regulations and standards
               are met and protecting the business interests.
@@ -172,13 +172,13 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+              <h1 className="font-semibold font-sans text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
                 Investment and Capital Management
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+            <p className="max-w-[394px] font-sans text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
               Advising on investment strategies and capital allocation of the
               highest return and supporting company growth.
             </p>
@@ -193,13 +193,13 @@ const VirtualCfo = () => {
                 alt="rs"
                 className="w-[38.45px] h-[38.45px] p-[5.5px] rounded-[68px]"
               />
-              <h1 className="font-semibold text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
+              <h1 className="font-semibold font-sans text-[#0F6089] text-[21.97px] leading-[160%] tracking-[-0.92px] align-middle">
                 Improving ROI Using Automation
               </h1>
             </div>
 
             {/* Description below */}
-            <p className="max-w-[394px] text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
+            <p className="max-w-[394px] font-sans text-[#1A1A1A] mt-2 font-normal text-[16px] leading-[160%] tracking-[-1px] align-middle">
               Virtual CFOs utilize the right automation tools for different
               labor-intensive finance processes like MIS, payroll, and
               reconciliation.
@@ -210,11 +210,11 @@ const VirtualCfo = () => {
         <div className="max-w-[1440px] h-[700px] mt-[120px]">
           {/* white div  */}.
           <div className="relative w-full h-[281px] bg-white">
-            <div className="absolute w-[623px] h-[58px] top-[13px] left-[380px] font-semibold text-[48px] leading-[120%] tracking-[-0.01em]">
-              <h1><span className='text-[#0F6089]'>Ready</span> to work <span className='text-[#0F6089] ml-[60px]'>With US</span></h1>
+            <div className="absolute w-[623px] h-[58px] top-[13px] left-[420px] font-sans font-semibold text-[48px] leading-[120%] tracking-[-0.01em]">
+              <h1><span className='text-[#0F6089]'>Ready</span> to work <span className='text-[#0F6089] ml-[80px]'>With US</span></h1>
             </div>
 
-            <div className="absolute w-[457px] h-[115px] top-[100px] left-[80px] text-[#0F608966] font-semibold text-[96px] leading-[120%] tracking-[-0.06em]">
+            <div className="absolute font-sans w-[457px] h-[115px] top-[100px] left-[80px] text-[#0F608966] font-semibold text-[96px] leading-[120%] tracking-[-0.06em]">
               <h1>AVATARAN</h1>
             </div>
 
@@ -226,27 +226,27 @@ const VirtualCfo = () => {
               />
             </div>
 
-            <div className="absolute w-[365px] h-[115px] top-[130px] left-[900px] text-[#1A1A1A66] font-bold text-[96px] leading-[120%] tracking-[-0.06em]">
+            <div className="absolute font-sans w-[365px] h-[115px] top-[130px] left-[900px] text-[#1A1A1A66] font-bold text-[96px] leading-[120%] tracking-[-0.06em]">
               <h1>CAPITAL</h1>
             </div>
           </div>
           {/* Block div  */}
           <div className="black w-screen h-[329px] bg-[#000000] flex relative items-center justify-center ">
             <div className="flex flex-col w-[292px] h-[123px] gap-[12px] opacity-100  absolute top-[100px] left-[25px] ">
-              <h1 className="h-[31px] text-[#ffffff] font-semibold text-[24px] leading-[130%] tracking-[-1px] align-middle ">
+              <h1 className="h-[31px] font-sans text-[#ffffff] font-semibold text-[24px] leading-[130%] tracking-[-1px] align-middle ">
                 Business Hours
               </h1>
-              <p className="text-[#FFFFFF] font-bold text-[16px] leading-[100%] tracking-[-1px] align-middle ">
+              <p className="text-[#FFFFFF] font-sans font-bold text-[16px] leading-[100%] tracking-[-1px] align-middle ">
                 <span className="text-[#0F6089] font-semibold ">
                   Monday-Friday
                 </span>{" "}
                 09:00am-07:00pm
               </p>
-              <p className="text-[#FFFFFF] font-bold text-[16px] leading-[100%] tracking-[-1px] align-middle">
+              <p className="text-[#FFFFFF] font-sans font-bold text-[16px] leading-[100%] tracking-[-1px] align-middle">
                 <span className="text-[#0F6089] font-semibold  ">Saturday</span>{" "}
                 09:00am-12:00pm
               </p>
-              <p className="text-[#FFFFFF] font-bold text-[16px] leading-[100%] tracking-[-1px] align-middle">
+              <p className="text-[#FFFFFF] font-sans font-bold text-[16px] leading-[100%] tracking-[-1px] align-middle">
                 Sunday{" "}
                 <span className="text-[#0F6089] font-semibold ">Closed</span>
               </p>
@@ -255,7 +255,7 @@ const VirtualCfo = () => {
             <div className="w-[695px] h-[138px] rounded-full bg-white flex  items-center justify-between px-8 absolute top-[60px] left-[372px]">
               <div className="flex items-center flex-col gap-2">
                 <img src={logo} alt="logo" className="h-16 w-16" />
-                <h1 className="text-[#0F6089] font-bold text-[28px] leading-none tracking-tight uppercase whitespace-nowrap">
+                <h1 className="text-[#0F6089] font-sans font-bold text-[28px] leading-none tracking-tight uppercase whitespace-nowrap">
                   AVATARAN CAPITAL
                 </h1>
               </div>
