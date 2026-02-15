@@ -135,6 +135,28 @@ function ScrollStack() {
           className="absolute bottom-0 right-0 max-w-[50%] max-h-[50%] z-[1] pointer-events-none"
         />
       </div>
+      <div className="card sticky top-[10vh] bg-blue-200 p-4 rounded serviceBox overflow-hidden pb-[20%] pr-[8%]">
+        <Svg1 /> {/* or create a separate Svg for Virtual CFO if needed */}
+        <h2 className="font-semibold text-[20px] sm:text-[22px] md:text-[26px] lg:text-[32px] text-center relative z-10">
+          Virtual CFO
+        </h2>
+        <p className="text-[16px] text-start relative z-10 pr-[30%] pb-[20%]">
+          Virtual CFOs (Chief Financial Officers) are strategic financial
+          advisors who oversee performance, compliance, and business growth
+          remotely.
+        </p>
+        <img
+          src="/grid.png"
+          alt="grid"
+          className="h-full max-w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-20"
+        />
+        <img
+          src="/services/passport.png"
+          alt="Note"
+          className="absolute bottom-0 right-0 max-w-[50%] max-h-[50%] z-[1] pointer-events-none"
+        />
+      </div>
+
       <div className="card sticky top-[10vh] bg-blue-200 p-4 h-auto md:h-[300px] lg:h-[330px] rounded serviceBox overflow-hidden pt-[18%] pr-[8%]">
         <Svg6 />
         <h2 className="font-semibold text-[20px] sm:text-[22px] md:text-[26px] lg:text-[32px] text-center relative z-10">
