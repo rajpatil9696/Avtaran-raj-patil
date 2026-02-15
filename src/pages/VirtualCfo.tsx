@@ -215,7 +215,6 @@ const VirtualCfo = () => {
         <div className="max-w-[1440px] mt-[120px]">
           {/* white div  */}.
           <div className="relative w-full bg-white h-auto lg:h-[281px] py-12 lg:py-0 flex flex-col lg:block items-center">
-            {/* Main Heading */}
             <div className="relative lg:absolute top-0 lg:top-[13px] left-0 lg:left-[420px] font-sans font-semibold text-[26px] lg:text-[48px] leading-[120%] tracking-[-0.01em] text-center lg:text-left">
               <h1>
                 <span className="text-[#0F6089]">Ready</span> to work{" "}
@@ -223,12 +222,10 @@ const VirtualCfo = () => {
               </h1>
             </div>
 
-            {/* AVATARAN CAPITAL - Combined on Mobile */}
             <div className="relative lg:absolute  mt-6 lg:mt-0 top-0 lg:top-[100px] left-0 lg:left-[80px] font-sans font-semibold text-[40px] lg:text-[96px]  leading-[120%] tracking-[-0.06em]  text-[#0F608966] text-center lg:text-left">
               <h1>AVTARAN</h1>
             </div>
 
-            {/* Girl Image - Hidden on Mobile */}
             <div className=" hidden lg:block  absolute  w-[448px] h-[320px]  top-[1px] left-[500px]">
               <img
                 src={girl}
@@ -237,7 +234,6 @@ const VirtualCfo = () => {
               />
             </div>
 
-            {/* CAPITAL - Right Side Desktop */}
             <div className=" relative lg:absolute top-0 lg:top-[130px] left-0 lg:left-[900px] font-sans font-bold text-[40px] lg:text-[96px] leading-[120%] tracking-[-0.06em]  text-[#1A1A1A66] text-center lg:text-left">
               <h1>CAPITAL</h1>
             </div>
@@ -273,8 +269,7 @@ const VirtualCfo = () => {
 
             {/* White Capsule */}
             <div
-              className="mt-10 lg:mt-0 w-full max-w-[695px] rounded-full bg-white  flex flex-col lg:flex-row  items-center justify-between  gap-6 lg:gap-0 px-6 lg:px-8 py-6 lg:absolute lg:top-[60px] lg:left-[372px]">
-              {/* Logo + Name */}
+              className="mt-10 lg:mt-0 w-full max-w-[695px] rounded-full bg-white  flex flex-col lg:flex-row  items-center justify-between  gap-4 lg:gap-0 px-6 lg:px-8 py-2 lg:absolute lg:top-[60px] lg:left-[372px]">
               <div className="flex flex-col items-center gap-2 text-center">
                 <img
                   src={logo}
