@@ -1,5 +1,5 @@
 import Navbar from "../components/common/Navbar";
-// import FooterNew from "../components/common/FooterNew";
+import FooterNew from "../components/common/FooterNew";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "motion/react";
 import Home from "./pages/Home";
@@ -46,7 +46,7 @@ function App() {
         <Navbar />
       </div>
       <AppRouter />
-      {/* <FooterNew /> */}
+      <FooterNew />
     </Router>
   );
 }
