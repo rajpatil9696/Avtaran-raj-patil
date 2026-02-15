@@ -197,22 +197,11 @@ function Navbar() {
               />
               {virtualServiceDrop && (
                 <div
-                  className="
-                             absolute top-[40px] left-1/2 -translate-x-1/2
-                           bg-white z-50
-                             rounded-2xl
-                             w-fit h-fit
-                             whitespace-nowrap
-                             py-4 px-3
-                            flex flex-col gap-3
-                            shadow-lg
-                                       "
-                >
+                  className="absolute top-[40px] left-1/2 -translate-x-1/2 bg-white z-50 rounded-2xl w-fit h-fit whitespace-nowrap py-4 px-3 flex flex-col gap-3 shadow-lg">
                   <a href="/virtual-cfo" className="text-[#4d4d4d] hover:text-[#0F6089] hover:bg-[#0068FF14] p-0.5 rounded-md pl-1 hover:scale-105 transition-all duration-300 flex items-center gap-1">
                     <VirtualCfoSvg height="30" width="30" />
                     Virtual CFO 
                   </a>
-        
                 </div>
               )}
             </motion.li>

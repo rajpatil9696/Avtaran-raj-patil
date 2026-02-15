@@ -8,7 +8,7 @@ import mobile from '../../src/assets/mobile.png'
 const VirtualCfo = () => {
   return (
     <>
-      <div className="Home w-full max-w-[1440px] mx-auto py-10 px-5 lg:py-16 lg:px-20">
+      <div className="Hero w-full max-w-[1440px] mx-auto py-10 px-5 lg:py-16 lg:px-20">
         {/* Heading */}
         <h1 className="text-[24px] lg:text-[37px] font-sans font-semibold leading-[130%] tracking-[-0.5px] lg:tracking-[-1px] text-center">
           What Are <span className="text-[#0F6089]">Virtual CFO services?</span>
@@ -55,7 +55,7 @@ const VirtualCfo = () => {
         </h1>
 
         {/* grid section  */}
-        <div className="max-w-[1344px]  mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="max-w-[1344px]  mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">  
           {/* card for grid */}
           {/* 1 */}
           <div className="max-w-[432px] rounded-[12px] max-h-[256px] bg-white shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 p-5">

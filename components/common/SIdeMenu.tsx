@@ -20,7 +20,9 @@ const MENU_ITEMS = [
   { title: "Start-ups", href: "/startups", options: [] },
   {
     title: "Virtual Services",
-    options: [],
+    options: [
+      { title: "Virtual CFO", href: "/virtual-cfo" }
+    ],
   },
   { title: "Knowledge Center", href: "/knowledge" },
   { title: "Career", href: "/career" },
