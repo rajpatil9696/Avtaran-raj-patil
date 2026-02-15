@@ -302,8 +302,7 @@ const VirtualCfo = () => {
                 />
               </div>
             </div>
-
-            {/* Phone Image - Hidden on Mobile */}
+                      {/* phone */}
             <div
               className=" hidden lg:block  absolute w-[425px]  top-[50px] left-[1055px] rotate-[7.29deg]">
               <img src={phone} alt="phone" />
