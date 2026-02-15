@@ -8,6 +8,7 @@ import Svg6 from "../Home/Services/Svg6";
 import Svg7 from "../Home/Services/Svg7";
 import AnimatePara from "../ui/AnimatePara";
 import SplitText from "../ui/SplitText";
+import mobile from '../../src/assets/mobile.png'
 import ScrollStack from "../../src/components/ScrollStack";
 import { useEffect, useState } from "react";
 
@@ -175,7 +176,7 @@ function Services() {
                   Virtual CFOs (Chief Financial Officers) are the strategic advisors and financial performance overseers of a business who work remotely. 
                 </p>
                 <img
-                  src="/services/passport.png"
+                  src={mobile}
                   alt="Note1"
                   className="absolute bottom-0 right-0 max-w-[50%] max-h-[50%] z-[1] pointer-events-none"
                 />

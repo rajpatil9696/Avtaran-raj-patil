@@ -8,6 +8,7 @@ import Svg7 from "../../components/Home/Services/Svg7";
 import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import mobile from '../assets/mobile.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -151,7 +152,7 @@ function ScrollStack() {
           className="h-full max-w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-20"
         />
         <img
-          src="/services/passport.png"
+          src={mobile}
           alt="Note"
           className="absolute bottom-0 right-0 max-w-[50%] max-h-[50%] z-[1] pointer-events-none"
         />
