@@ -49,13 +49,13 @@ const VirtualCfo = () => {
         </div>
       </div>
 
-      <div className="max-w-[1440px] h-[1001px] mt-[100px] z-30 pt-[40px]">
+      <div className="max-w-[1440px] mt-[100px] z-30 pt-[40px]">
         <h1 className="text-[24px] lg:text-[37px] font-sans font-semibold leading-[130%] tracking-[-0.5px] lg:tracking-[-1px] text-center">
           What Are <span className="text-[#0F6089]">Virtual CFO services?</span>
         </h1>
 
         {/* grid section  */}
-        <div className="max-w-[1344px] max-h-[816px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="max-w-[1344px]  mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* card for grid */}
           {/* 1 */}
           <div className="max-w-[432px] rounded-[12px] max-h-[256px] bg-white shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 p-5">
@@ -212,7 +212,7 @@ const VirtualCfo = () => {
           </div>
         </div>
         {/* Bottom section  */}
-        <div className="max-w-[1440px] h-[700px] mt-[120px]">
+        <div className="max-w-[1440px] mt-[120px]">
           {/* white div  */}.
           <div className="relative w-full bg-white h-auto lg:h-[281px] py-12 lg:py-0 flex flex-col lg:block items-center">
             {/* Main Heading */}
@@ -225,7 +225,7 @@ const VirtualCfo = () => {
 
             {/* AVATARAN CAPITAL - Combined on Mobile */}
             <div className="relative lg:absolute  mt-6 lg:mt-0 top-0 lg:top-[100px] left-0 lg:left-[80px] font-sans font-semibold text-[40px] lg:text-[96px]  leading-[120%] tracking-[-0.06em]  text-[#0F608966] text-center lg:text-left">
-              <h1>AVATARAN</h1>
+              <h1>AVTARAN</h1>
             </div>
 
             {/* Girl Image - Hidden on Mobile */}
@@ -283,7 +283,7 @@ const VirtualCfo = () => {
                 />
                 <h1
                   className="text-[#0F6089] font-sans font-bold  text-[20px] lg:text-[28px] leading-none tracking-tight uppercase">
-                  AVATARAN CAPITAL
+                  AVTARAN CAPITAL
                 </h1>
               </div>
 
